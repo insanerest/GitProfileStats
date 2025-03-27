@@ -1,0 +1,74 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Root element for React */
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Full-width header */
+header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Main content section */
+main {
+  width: 100%;
+  flex-grow: 1; /* Take up remaining space */
+  padding: 4rem 1rem 2rem; /* Padding below the header */
+  text-align: left;
+}
+
+/* Full-width footer */
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: fixed; /* Fixed at the bottom */
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Optional: Styles for content inside header, main, and footer */
+header h1, footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  font-size: 0.875rem; /* Smaller text for footer */
+}
+
+/* Optional: Add responsiveness for mobile devices */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+}
