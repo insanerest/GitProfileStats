@@ -8,19 +8,19 @@ export default function Layout({ children }) {
       <header className="bg-blue-600 text-white p-4 shadow-md">
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-semibold">
-            <Link to="/GitProfileStats/" style={{ color: "white"}}>
+            <Link to="/" style={{ color: "white"}}>
               GitProfileStats
             </Link>
           </h1>
           <nav>
             <ul className="flex space-x-6">
               <li>
-                <Link to="/GitProfileStats/" style={{ color: "white" }}>
+                <Link to="/" style={{ color: "white" }}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/GitProfileStats/about" style={{ color: "white" }}>
+                <Link to="/about" style={{ color: "white" }}>
                   About
                 </Link>
               </li>
